@@ -1,0 +1,13 @@
+/* Покачивание стрелки вверх-вниз, зациклено */
+.arrowHero {
+  animation: bobArrow 1.6s ease-in-out infinite;
+}
+@keyframes bobArrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1vh);
+  }
+}

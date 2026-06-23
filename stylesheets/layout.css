@@ -5,24 +5,83 @@
   --mainFontSize: 1.6vw;
 }
 html {
-  height: 100%;
+  height: 100vh;
 }
 body {
   width: 100%;
-  height: 100%;
   background-color: #eee;
-  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  font-family: 'Styrene A';
   font-size: var(--mainFontSize);
-  padding: 1.6vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 1.6vw;
+  left: 1.6vw;
+  right: 1.6vw;
+  z-index: 100;
+}
+#burger {
+  flex-shrink: 0;
+  width: 5.5vw;
+  height: 5.5vw;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7vw;
+}
+#burger span {
+  width: 46%;
+  height: 0.3vw;
+  background-color: #222;
+  border-radius: 0.8vw;
+  transition:
+    transform ease 0.4s,
+    opacity ease 0.3s;
+}
+#burger.active span:nth-child(1) {
+  transform: translateY(1vw) rotate(45deg);
+}
+#burger.active span:nth-child(2) {
+  opacity: 0;
+}
+#burger.active span:nth-child(3) {
+  transform: translateY(-1vw) rotate(-45deg);
 }
 .mainMenu {
-  width: 60%;
-  margin: 0 auto;
+  flex: 1;
+  height: 5.5vw;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 1.6vw 2vw;
-  background-color: white;
-  border-radius: 2vw;
+  padding: 0 2.5vw 0 3vw;
+  margin-left: 0.5vw;
+  position: relative;
+  z-index: 1;
+  background: url('../images/headerFigure.svg') center / 100% 100% no-repeat;
+  white-space: nowrap;
+  overflow: hidden;
+  transform-origin: left center;
+  transition:
+    transform ease 0.5s,
+    opacity ease 0.4s;
+}
+#burger.active + .mainMenu {
+  transform: scaleX(0);
+  opacity: 0;
 }
 .mainMenu a {
   color: #222;
@@ -31,10 +90,245 @@ body {
 }
 .mainMenu a.active,
 .mainMenu a.active:hover {
-  color: cornflowerblue;
+  color: #ff008c;
   text-decoration: none;
 }
 .mainMenu a:hover {
   color: #777;
   text-decoration: underline;
+}
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+.bgHero {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url('../images/bgHero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.BigHero {
+  color: white;
+  font-size: 13vw;
+  font-weight: 400;
+  line-height: 1;
+}
+.SmallHero {
+  margin-top: 1.5vh;
+  color: #cfcfcf;
+  font-size: 2vw;
+  font-weight: 400;
+}
+.arrowHero {
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  margin-left: -1.5vw;
+  width: 3vw;
+}
+.mainAbout {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+.blockHalf {
+  width: 44vw;
+  height: 26vw;
+  background-color: #ff008c;
+  border-radius: 2vw;
+}
+.blockQuarter {
+  width: 21vw;
+  height: 26vw;
+  background-color: #1a1a1a;
+  border-radius: 2vw;
+}
+.mainAbout1 {
+  background-image: url('../images/mainAbout1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mainAbout2 {
+  background-color: white;
+  border: 0.15vw solid #ff008c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.discountTitle {
+  color: #ff008c;
+  font-size: 4.2vw;
+  font-weight: 400;
+  margin: 0;
+}
+.percentFix {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.discountSubtitle {
+  color: #ff66ba;
+  font-size: 1.6vw;
+  font-weight: 400;
+  margin: 1vw 0 0;
+}
+.mainAbout3 {
+  background-color: white;
+  border: 0.15vw solid #ff008c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2vw;
+  box-sizing: border-box;
+}
+.cardTitle {
+  color: #ff008c;
+  font-size: 2.6vw;
+  font-weight: 400;
+  margin: 0;
+}
+.cardSubtitle {
+  color: #ff66ba;
+  font-size: 1.4vw;
+  font-weight: 400;
+  margin: 0.6vw 0 0;
+}
+.cardRow {
+  display: flex;
+  align-items: center;
+  gap: 1.2vw;
+  margin-top: 1.6vw;
+}
+.cardIcon {
+  width: 3.4vw;
+  height: 3.4vw;
+}
+.cardRowTitle {
+  color: #1a1a1a;
+  font-size: 2.1vw;
+  font-weight: 400;
+  line-height: 1;
+}
+.cardRowNote {
+  color: #888;
+  font-size: 1.2vw;
+  font-weight: 400;
+  line-height: 1;
+  align-self: center;
+}
+.mainAbout4 {
+  background-image: url('../images/mainAbout4.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mainAbout5 {
+  background-image: url('../images/mainAbout5.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.HorizontalScroll1 {
+  width: 90vw;
+  padding: 5vw 0;
+  margin-top: 4vw;
+  box-sizing: border-box;
+  border-radius: 2vw;
+  overflow: hidden;
+  background-image: url('../images/HorizontalScrollBg1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.scrollTitle {
+  color: white;
+  font-size: 2.8vw;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 4vw 3vw;
+}
+.scrollRow {
+  display: flex;
+  gap: 1.6vw;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  padding-bottom: 1vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+.scrollCard {
+  flex: 0 0 auto;
+  width: 30vw;
+  display: block;
+  background-color: #eee;
+  border-radius: 1.2vw;
+  padding: 1.6vw;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.scrollCardImg {
+  width: 100%;
+  height: 18vw;
+  background-color: #707070;
+  border-radius: 0.8vw;
+}
+.scrollCardTitle {
+  color: #1a1a1a;
+  font-size: 2vw;
+  font-weight: 400;
+  margin: 1.2vw 0 0;
+}
+.scrollCardAddress {
+  color: #555;
+  font-size: 1.2vw;
+  font-weight: 400;
+  margin: 0.4vw 0 0;
+}
+.steps {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  margin-top: 4vw;
+}
+.stepCard {
+  border: 0.15vw solid #ff008c;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2vw;
+}
+.stepNumber {
+  color: #1a1a1a;
+  font-size: 3.4vw;
+  font-weight: 500;
+  margin: 0;
+}
+.stepText {
+  color: #1a1a1a;
+  font-size: 1.3vw;
+  font-weight: 400;
+  margin: 1.6vw 0 0;
+}
+.step4 {
+  border: none;
+  background-image: url('../images/stepsBg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.stepNumberWhite,
+.stepTextWhite {
+  color: white;
 }

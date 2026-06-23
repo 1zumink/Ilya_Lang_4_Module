@@ -1,37 +1,32 @@
 @media screen and (max-width: 600px) {
+  .header {
+    display: block;
+  }
   #burger {
-    width: 40px;
-    height: 26px;
+    width: 11vw;
+    height: 11vw;
     position: fixed;
+    top: 2vw;
+    left: 2vw;
     z-index: 3;
-    margin: 2vw;
-    cursor: pointer;
+    gap: 1.5vw;
+    box-shadow: 0 0.5vw 3vw rgba(0, 0, 0, 0.15);
   }
-  #burger::before,
-  #burger::after {
-    width: 100%;
-    height: 2px;
-    background-color: #222;
-    border-radius: 10px;
-    content: '';
-    position: absolute;
-    left: 0;
-    transition: transform ease 0.8s;
+  #burger span {
+    width: 42%;
+    height: 0.9vw;
+    transition:
+      transform ease 0.4s,
+      opacity ease 0.3s;
   }
-  #burger::before {
-    top: 0;
-    box-shadow: 0 26px #222;
+  #burger.active span:nth-child(1) {
+    transform: translateY(2.4vw) rotate(45deg);
   }
-  #burger::after {
-    top: 13px;
+  #burger.active span:nth-child(2) {
+    opacity: 0;
   }
-  #burger.active::before {
-    top: 13px;
-    transform: rotate(45deg);
-    box-shadow: 0 26px #22222200;
-  }
-  #burger.active::after {
-    transform: rotate(-45deg);
+  #burger.active span:nth-child(3) {
+    transform: translateY(-2.4vw) rotate(-45deg);
   }
   .mainMenu {
     width: 100%;
@@ -40,11 +35,16 @@
     top: 0;
     left: 0;
     z-index: 2;
+    margin-left: 0;
+    background: white;
     border-radius: 0;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 60px 3.4vw 2vw 3.4vw;
+    padding: 15vw 3.4vw 2vw 3.4vw;
     gap: 4vw;
+    overflow: hidden;
+    white-space: normal;
+    transform-origin: center;
     transition: transform ease 0.8s;
     transform: translateX(-100%);
   }
@@ -54,6 +54,7 @@
   }
   #burger.active + .mainMenu {
     transform: translateX(0);
+    opacity: 1;
   }
   .mainMenu a:not(.active)::before {
     content: '';
@@ -71,5 +72,114 @@
   .mainMenu a:not(.active):hover::before {
     opacity: 1;
     transform: translateX(3vw);
+  }
+  .BigHero {
+    font-size: 22vw;
+  }
+  .SmallHero {
+    margin-top: 2vh;
+    font-size: 4.2vw;
+  }
+  .arrowHero {
+    width: 9vw;
+    margin-left: -4.5vw;
+    bottom: 4vh;
+  }
+  .mainAbout {
+    gap: 4vw;
+  }
+  .blockHalf {
+    width: 90vw;
+    height: 53vw;
+  }
+  .blockQuarter {
+    width: 43vw;
+    height: 53vw;
+  }
+  .mainAbout2 {
+    border-radius: 4vw;
+  }
+  .discountTitle {
+    font-size: 9vw;
+  }
+  .discountSubtitle {
+    font-size: 3.6vw;
+    margin-top: 2vw;
+  }
+  .mainAbout3 {
+    border-radius: 4vw;
+    padding: 5vw;
+  }
+  .cardTitle {
+    font-size: 4.4vw;
+  }
+  .cardSubtitle {
+    font-size: 2.6vw;
+    margin-top: 1.5vw;
+  }
+  .cardRow {
+    gap: 2.6vw;
+    margin-top: 3.4vw;
+  }
+  .cardIcon {
+    width: 7vw;
+    height: 7vw;
+  }
+  .cardRowTitle {
+    font-size: 4.4vw;
+  }
+  .cardRowNote {
+    font-size: 2.6vw;
+  }
+  .HorizontalScroll1 {
+    width: 90vw;
+    padding: 6vw 0;
+    margin-top: 8vw;
+    border-radius: 4vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .scrollTitle {
+    font-size: 4.6vw;
+    margin: 0 5vw 10vw;
+  }
+  .scrollRow {
+    gap: 3vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .scrollCard {
+    width: 90vw;
+    border-radius: 3vw;
+    padding: 3.5vw;
+  }
+  .scrollCardImg {
+    height: 55vw;
+    border-radius: 2vw;
+  }
+  .scrollCardTitle {
+    font-size: 4.6vw;
+    margin-top: 3vw;
+  }
+  .scrollCardAddress {
+    font-size: 3vw;
+    margin-top: 1vw;
+  }
+  .steps {
+    gap: 3vw;
+  }
+  .stepCard {
+    border-radius: 4vw;
+    padding: 4vw;
+  }
+  .stepNumber {
+    font-size: 8vw;
+  }
+  .stepText {
+    font-size: 3vw;
+    margin-top: 2.5vw;
   }
 }

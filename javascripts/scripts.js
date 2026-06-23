@@ -3,9 +3,9 @@
 burgerMenu()
 
 function burgerMenu() {
-  let burger = document.querySelector('#burger')
+  var burger = document.querySelector('#burger')
 
-  burger.addEventListener('click', () => {
+  burger.onclick = function () {
     burger.classList.toggle('active')
-  })
+  }
 }
