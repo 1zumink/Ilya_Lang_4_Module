@@ -285,6 +285,8 @@ body {
   width: 100%;
   height: 18vw;
   background-color: #707070;
+  background-size: cover;
+  background-position: center;
   border-radius: 0.8vw;
 }
 .scrollCardTitle {
@@ -599,4 +601,140 @@ body {
 }
 .sliderNext {
   right: 1vw;
+}
+.placeHero {
+  position: relative;
+  width: 80vw;
+  margin: -3vw auto 0;
+  z-index: 0;
+  overflow: hidden;
+}
+.placeHeroImg {
+  display: block;
+  width: 100%;
+  height: 32vw;
+  object-fit: cover;
+}
+.placeHero::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 8vw;
+  background: linear-gradient(to bottom, rgba(238, 238, 238, 0), #eee);
+}
+.placeWrap {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3vw;
+}
+.placeMain {
+  width: 44vw;
+  display: flex;
+  flex-direction: column;
+}
+.placeTitle {
+  color: #1a1a1a;
+  font-size: 2.6vw;
+  font-weight: 400;
+  margin: 0;
+}
+.placeDescription {
+  color: #555;
+  font-size: 1.3vw;
+  font-weight: 400;
+  margin: 1.4vw 0 2vw;
+}
+.placeImage {
+  display: block;
+  width: 100%;
+  border-radius: 2vw;
+  margin-top: 2vw;
+}
+.placeImage:first-of-type {
+  margin-top: 0;
+}
+.placeSidebar {
+  width: 31vw;
+  flex-shrink: 0;
+  position: sticky;
+  top: 8vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6vw;
+}
+.placeInfoCard {
+  box-sizing: border-box;
+  background-color: white;
+  border: 0.15vw solid #ff008c;
+  border-radius: 2vw;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vw;
+}
+.placeInfoLine {
+  color: #1a1a1a;
+  font-size: 1.3vw;
+  font-weight: 400;
+  margin: 0;
+}
+.placeCta {
+  display: block;
+  box-sizing: border-box;
+  background-color: #ff008c;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2vw;
+  padding: 1.4vw;
+  font-size: 1.6vw;
+  font-weight: 400;
+}
+.eventInfoCard {
+  border-color: #422cff;
+}
+.eventCta {
+  background-color: #422cff;
+}
+.placeSectionTitle {
+  color: #1a1a1a;
+  font-size: 1.6vw;
+  font-weight: 400;
+  margin: 0 0 1vw;
+}
+.placeServicesList {
+  list-style: disc;
+  margin: 0 0 2vw;
+  padding-left: 1.6vw;
+  color: #555;
+  font-size: 1.3vw;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6vw;
+}
+.placeTimingList {
+  list-style: none;
+  margin: 0 0 2vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6vw;
+}
+.placeTimingList li {
+  display: flex;
+  gap: 0.8vw;
+  color: #555;
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+.placeTimingTime {
+  flex-shrink: 0;
+  color: #422cff;
+  font-weight: 400;
 }

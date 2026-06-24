@@ -324,4 +324,68 @@
   .sliderArrow {
     font-size: 14vw;
   }
+  .placeHero {
+    width: 90vw;
+    margin-top: -5vw;
+  }
+  .placeHeroImg {
+    height: 70vw;
+  }
+  .placeHero::after {
+    height: 16vw;
+  }
+  .placeWrap {
+    width: 90vw;
+    flex-direction: column;
+    gap: 6vw;
+  }
+  .placeMain {
+    width: 90vw;
+  }
+  .placeTitle {
+    font-size: 7vw;
+  }
+  .placeDescription {
+    font-size: 3.6vw;
+    margin: 3vw 0 5vw;
+  }
+  .placeImage {
+    border-radius: 4vw;
+    margin-top: 5vw;
+  }
+  .placeSidebar {
+    width: 90vw;
+    position: static;
+  }
+  .placeInfoCard {
+    border-radius: 4vw;
+    padding: 5vw;
+    gap: 2vw;
+  }
+  .placeInfoLine {
+    font-size: 3.6vw;
+  }
+  .placeCta {
+    border-radius: 4vw;
+    padding: 4vw;
+    font-size: 4.4vw;
+  }
+  .placeSectionTitle {
+    font-size: 5vw;
+    margin-bottom: 3vw;
+  }
+  .placeServicesList {
+    margin-bottom: 5vw;
+    padding-left: 4vw;
+    font-size: 3.6vw;
+    gap: 1.5vw;
+  }
+  .placeTimingList {
+    margin-bottom: 5vw;
+    gap: 1.5vw;
+  }
+  .placeTimingList li {
+    font-size: 3.6vw;
+    gap: 2vw;
+  }
 }
