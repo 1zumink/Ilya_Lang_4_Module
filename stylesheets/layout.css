@@ -52,14 +52,23 @@ body {
     transform ease 0.4s,
     opacity ease 0.3s;
 }
-#burger.active span:nth-child(1) {
+#burger span:nth-child(1) {
   transform: translateY(1vw) rotate(45deg);
 }
-#burger.active span:nth-child(2) {
+#burger span:nth-child(2) {
   opacity: 0;
 }
-#burger.active span:nth-child(3) {
+#burger span:nth-child(3) {
   transform: translateY(-1vw) rotate(-45deg);
+}
+#burger.active span:nth-child(1) {
+  transform: none;
+}
+#burger.active span:nth-child(2) {
+  opacity: 1;
+}
+#burger.active span:nth-child(3) {
+  transform: none;
 }
 .mainMenu {
   flex: 1;
@@ -292,6 +301,10 @@ body {
   font-weight: 400;
   margin: 0.4vw 0 0;
 }
+.HorizontalScroll2 {
+  margin-top: 4vw;
+  background-image: url('../images/HorizontalScrollBg2.svg');
+}
 .steps {
   width: 90vw;
   display: flex;
@@ -331,4 +344,78 @@ body {
 .stepNumberWhite,
 .stepTextWhite {
   color: white;
+}
+.casesBlock {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  margin-top: 4vw;
+}
+.caseGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.caseRow {
+  display: flex;
+  gap: 2vw;
+}
+.caseContent {
+  width: 67vw;
+  height: 26vw;
+  box-sizing: border-box;
+  border-radius: 2vw;
+  padding: 2.4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.caseContentBlue {
+  background: linear-gradient(135deg, #2b2bff, #6a8dff);
+}
+.caseContentPink {
+  background: linear-gradient(135deg, #ff0080, #ff4fa8);
+}
+.caseTitle {
+  font-size: 2.8vw;
+  font-weight: 400;
+  margin: 0 0 1.2vw;
+}
+.caseList {
+  margin: 0;
+  padding-left: 1.4vw;
+  font-size: 1.7vw;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  list-style: disc;
+}
+.caseImage {
+  width: 21vw;
+  height: 26vw;
+  background-color: #888;
+  border-radius: 2vw;
+  flex-shrink: 0;
+}
+.caseButton {
+  width: 90vw;
+  height: 4.6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2vw;
+  color: white;
+  font-size: 1.6vw;
+  font-weight: 400;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.caseButtonBlue {
+  background: linear-gradient(135deg, #2b2bff, #6a8dff);
+}
+.caseButtonPink {
+  background: linear-gradient(135deg, #ff0080, #ff4fa8);
 }

@@ -182,4 +182,43 @@
     font-size: 3vw;
     margin-top: 2.5vw;
   }
+  .casesBlock {
+    gap: 10vw;
+    margin-top: 6vw;
+  }
+  .caseGroup {
+    gap: 3vw;
+  }
+  .caseRow {
+    flex-direction: column;
+    gap: 3vw;
+  }
+  .caseContent {
+    width: 90vw;
+    height: auto;
+    border-radius: 4vw;
+    padding: 5vw;
+    order: 1;
+  }
+  .caseImage {
+    width: 90vw;
+    height: 60vw;
+    border-radius: 4vw;
+    order: 2;
+  }
+  .caseTitle {
+    font-size: 5vw;
+    margin-bottom: 2vw;
+  }
+  .caseList {
+    font-size: 3.4vw;
+    padding-left: 4vw;
+    gap: 1.5vw;
+  }
+  .caseButton {
+    width: 90vw;
+    height: 12vw;
+    border-radius: 4vw;
+    font-size: 4vw;
+  }
 }
