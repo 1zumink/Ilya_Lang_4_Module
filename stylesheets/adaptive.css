@@ -19,6 +19,13 @@
       transform ease 0.4s,
       opacity ease 0.3s;
   }
+  #burger span:nth-child(1),
+  #burger span:nth-child(3) {
+    transform: none;
+  }
+  #burger span:nth-child(2) {
+    opacity: 1;
+  }
   #burger.active span:nth-child(1) {
     transform: translateY(2.4vw) rotate(45deg);
   }
@@ -220,5 +227,73 @@
     height: 12vw;
     border-radius: 4vw;
     font-size: 4vw;
+  }
+  .pageTopper {
+    height: 55vw;
+  }
+  .pageTopperTitle {
+    font-size: 9vw;
+  }
+  .aboutBento {
+    gap: 4vw;
+  }
+  .aboutBento1 {
+    order: 1;
+  }
+  .aboutBento2 {
+    order: 2;
+  }
+  .aboutBento3 {
+    order: 3;
+  }
+  .aboutBento5 {
+    order: 4;
+  }
+  .aboutBento4 {
+    order: 5;
+  }
+  .aboutBento6 {
+    order: 6;
+  }
+  .plansRow {
+    flex-direction: column;
+    gap: 4vw;
+  }
+  .plansRow .planCard {
+    width: 90vw;
+    height: auto;
+    padding: 6vw;
+    align-items: center;
+    text-align: center;
+  }
+  .planCard.planActive {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .planCard.planActive .planIcon {
+    opacity: 1;
+  }
+  .planCard.planActive .planBody {
+    max-height: 300vw;
+    opacity: 1;
+  }
+  .planIcon {
+    top: -3vw;
+    right: -3vw;
+    width: 20vw;
+    height: 20vw;
+  }
+  .planTitle {
+    font-size: 8vw;
+  }
+  .planList {
+    font-size: 3.4vw;
+    margin-top: 4vw;
+    padding-left: 4vw;
+    gap: 1.5vw;
+  }
+  .planPrice {
+    font-size: 5vw;
+    margin-top: 5vw;
   }
 }

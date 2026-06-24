@@ -121,10 +121,7 @@ body {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background-image: url('../images/bgHero.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url('../images/bgHero.png') center / cover no-repeat;
 }
 .BigHero {
   color: white;
@@ -151,26 +148,36 @@ body {
   flex-wrap: wrap;
   gap: 2vw;
 }
+.blockHalf,
+.blockQuarter {
+  height: 26vw;
+  border-radius: 2vw;
+}
 .blockHalf {
   width: 44vw;
-  height: 26vw;
   background-color: #ff008c;
-  border-radius: 2vw;
 }
 .blockQuarter {
   width: 21vw;
-  height: 26vw;
   background-color: #1a1a1a;
-  border-radius: 2vw;
 }
-.mainAbout1 {
-  background-image: url('../images/mainAbout1.svg');
+.mainAbout1,
+.mainAbout4,
+.mainAbout5 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.mainAbout2 {
+.mainAbout1 {
+  background-image: url('../images/mainAbout1.svg');
+}
+.mainAbout2,
+.mainAbout3,
+.stepCard,
+.aboutBlock {
   background-color: white;
   border: 0.15vw solid #ff008c;
+}
+.mainAbout2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -192,8 +199,6 @@ body {
   margin: 1vw 0 0;
 }
 .mainAbout3 {
-  background-color: white;
-  border: 0.15vw solid #ff008c;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -237,13 +242,9 @@ body {
 }
 .mainAbout4 {
   background-image: url('../images/mainAbout4.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .mainAbout5 {
   background-image: url('../images/mainAbout5.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .HorizontalScroll1 {
   width: 90vw;
@@ -252,10 +253,7 @@ body {
   box-sizing: border-box;
   border-radius: 2vw;
   overflow: hidden;
-  background-image: url('../images/HorizontalScrollBg1.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url('../images/HorizontalScrollBg1.svg') center / cover no-repeat;
 }
 .scrollTitle {
   color: white;
@@ -277,7 +275,7 @@ body {
   flex: 0 0 auto;
   width: 30vw;
   display: block;
-  background-color: #eee;
+  background-color: #ffffff;
   border-radius: 1.2vw;
   padding: 1.6vw;
   box-sizing: border-box;
@@ -313,8 +311,6 @@ body {
   margin-top: 4vw;
 }
 .stepCard {
-  border: 0.15vw solid #ff008c;
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -336,10 +332,7 @@ body {
 }
 .step4 {
   border: none;
-  background-image: url('../images/stepsBg.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url('../images/stepsBg.svg') center / cover no-repeat;
 }
 .stepNumberWhite,
 .stepTextWhite {
@@ -372,10 +365,12 @@ body {
   justify-content: center;
   color: white;
 }
-.caseContentBlue {
+.caseContentBlue,
+.caseButtonBlue {
   background: linear-gradient(135deg, #2b2bff, #6a8dff);
 }
-.caseContentPink {
+.caseContentPink,
+.caseButtonPink {
   background: linear-gradient(135deg, #ff0080, #ff4fa8);
 }
 .caseTitle {
@@ -413,9 +408,118 @@ body {
   text-decoration: none;
   box-sizing: border-box;
 }
-.caseButtonBlue {
-  background: linear-gradient(135deg, #2b2bff, #6a8dff);
+.pageTopper {
+  width: 100%;
+  height: 28vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../images/bgTopper.jpg') center / cover no-repeat;
 }
-.caseButtonPink {
-  background: linear-gradient(135deg, #ff0080, #ff4fa8);
+.pageTopperTitle {
+  color: white;
+  font-size: 3.2vw;
+  font-weight: 400;
+  margin: 0;
+}
+.aboutBento {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  margin-top: 4vw;
+}
+.plansRow {
+  width: 90vw;
+  display: flex;
+  gap: 2vw;
+  margin-top: 4vw;
+}
+.planCard {
+  width: 21vw;
+  height: 32vw;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 2vw;
+  padding: 2.4vw;
+  background-color: #3a24e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: width 0.5s ease;
+}
+.planIcon {
+  position: absolute;
+  top: -1.2vw;
+  right: -1.2vw;
+  width: 7vw;
+  height: 7vw;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.planTitle {
+  color: white;
+  font-size: 3.4vw;
+  font-weight: 400;
+  margin: 0;
+}
+.planBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.3s ease;
+}
+.planList {
+  list-style: disc;
+  margin: 1.6vw 0 0;
+  padding-left: 1.6vw;
+  color: white;
+  font-size: 1.3vw;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6vw;
+}
+.planPrice {
+  color: white;
+  font-size: 2vw;
+  font-weight: 400;
+  margin: 2vw 0 0;
+}
+@media (min-width: 601px) {
+  .planCard:hover,
+  .planExpanded {
+    width: 44vw;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .planCard:hover .planIcon,
+  .planExpanded .planIcon {
+    opacity: 1;
+  }
+  .planCard:hover .planBody,
+  .planExpanded .planBody {
+    max-height: 24vw;
+    opacity: 1;
+  }
+  .plansRow:hover .planExpanded:not(:hover) {
+    width: 21vw;
+    align-items: center;
+    text-align: center;
+  }
+  .plansRow:hover .planExpanded:not(:hover) .planIcon {
+    opacity: 0;
+  }
+  .plansRow:hover .planExpanded:not(:hover) .planBody {
+    max-height: 0;
+    opacity: 0;
+  }
 }
