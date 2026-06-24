@@ -232,7 +232,9 @@
     height: 55vw;
   }
   .pageTopperTitle {
+    width: 100%;
     font-size: 9vw;
+    text-align: center;
   }
   .aboutBento {
     gap: 4vw;
@@ -295,5 +297,31 @@
   .planPrice {
     font-size: 5vw;
     margin-top: 5vw;
+  }
+  .caseFull {
+    gap: 3vw;
+  }
+  .caseFullCard {
+    border-radius: 4vw;
+    padding: 6vw;
+  }
+  .caseFullTitle {
+    font-size: 6vw;
+    margin-bottom: 3vw;
+  }
+  .caseSeeButton {
+    width: 90vw;
+    height: 12vw;
+    border-radius: 4vw;
+    font-size: 4vw;
+  }
+  .sliderViewport {
+    border-radius: 4vw;
+  }
+  .sliderSlide {
+    height: 80vw;
+  }
+  .sliderArrow {
+    font-size: 14vw;
   }
 }
