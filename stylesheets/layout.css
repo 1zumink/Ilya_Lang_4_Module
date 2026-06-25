@@ -150,6 +150,24 @@ body {
 .asset-lodge10-5 {
   background-image: url('../images/lodge10_5.png');
 }
+.asset-collabdr1 {
+  background-image: url('../images/collabDr1.svg');
+}
+.asset-collabdr2 {
+  background-image: url('../images/collabDr2.svg');
+}
+.asset-collabdr3 {
+  background-image: url('../images/collabDr3.svg');
+}
+.asset-collabya1 {
+  background-image: url('../images/collabYa1.svg');
+}
+.asset-collabya2 {
+  background-image: url('../images/collabYa2.svg');
+}
+.asset-collabya3 {
+  background-image: url('../images/collabYa3.svg');
+}
 .asset-caseimage1 {
   background-image: url('../images/caseImage1.jpg');
 }
@@ -386,6 +404,10 @@ body {
   background: none;
   cursor: pointer;
   z-index: 1;
+  transition: transform ease 0.25s;
+}
+.bentoNewsBtn:hover {
+  transform: translate(-50%, -50%) scale(1.08);
 }
 .bentoNewsBtn > span {
   display: block;
@@ -434,6 +456,13 @@ body {
   border-radius: 50%;
   background-color: white;
   cursor: pointer;
+  transition:
+    background-color ease 0.25s,
+    transform ease 0.25s;
+}
+.newsPopupClose:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.1);
 }
 .newsPopupClose span {
   position: absolute;
@@ -460,6 +489,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition:
+    box-shadow ease 0.25s,
+    transform ease 0.25s;
+}
+.newsSocialCard:hover {
+  box-shadow: 0 0.6vw 1.6vw rgba(0, 0, 0, 0.18);
+  transform: scale(1.04);
 }
 .newsSocialIcon {
   width: 7.5vw;
@@ -483,6 +519,26 @@ body {
 .aboutBlock {
   background-color: white;
   border: 0.15vw solid #ff008c;
+  background-size: cover;
+  background-position: center;
+}
+.asset-abtus1 {
+  background-image: url('../images/abtUs1.svg');
+}
+.asset-abtus2 {
+  background-image: url('../images/abtUs2.svg');
+}
+.asset-abtus3 {
+  background-image: url('../images/abtUs3.svg');
+}
+.asset-abtus4 {
+  background-image: url('../images/abtUs4.svg');
+}
+.asset-abtus5 {
+  background-image: url('../images/abtUs5.svg');
+}
+.asset-abtus6 {
+  background-image: url('../images/abtUs6.svg');
 }
 .mainAbout2 {
   display: flex;
@@ -718,6 +774,13 @@ body {
   font-weight: 400;
   text-decoration: none;
   box-sizing: border-box;
+  transition:
+    transform ease 0.25s,
+    box-shadow ease 0.25s;
+}
+.caseButton:hover {
+  transform: translateY(-0.2vw);
+  box-shadow: 0 0.6vw 1.6vw rgba(0, 0, 0, 0.25);
 }
 .pageTopper {
   width: 100%;
@@ -769,7 +832,12 @@ body {
   width: 7vw;
   height: 7vw;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.25s ease;
+}
+.planIcon:hover {
+  transform: scale(1.1);
 }
 .planTitle {
   color: white;
@@ -875,6 +943,13 @@ body {
   text-decoration: none;
   box-sizing: border-box;
   background: linear-gradient(120deg, #4861ff, #6f9bff);
+  transition:
+    transform ease 0.25s,
+    box-shadow ease 0.25s;
+}
+.caseSeeButton:hover {
+  transform: translateY(-0.2vw);
+  box-shadow: 0 0.6vw 1.6vw rgba(0, 0, 0, 0.25);
 }
 .slider {
   position: relative;
@@ -910,6 +985,10 @@ body {
   font-size: 6vw;
   font-weight: 400;
   line-height: 1;
+  transition: color ease 0.25s;
+}
+.sliderArrow:hover {
+  color: #ff008c;
 }
 .sliderPrev {
   left: 1vw;
@@ -1050,12 +1129,22 @@ body {
   padding: 1.4vw;
   font-size: 1.6vw;
   font-weight: 400;
+  transition:
+    transform ease 0.25s,
+    box-shadow ease 0.25s;
+}
+.placeCta:hover {
+  transform: translateY(-0.2vw);
+  box-shadow: 0 0.6vw 1.6vw rgba(255, 0, 140, 0.45);
 }
 .eventInfoCard {
   border-color: #422cff;
 }
 .eventCta {
   background-color: #422cff;
+}
+.eventCta:hover {
+  box-shadow: 0 0.6vw 1.6vw rgba(66, 44, 255, 0.45);
 }
 .placeSectionTitle {
   color: #1a1a1a;
@@ -1121,9 +1210,10 @@ body {
 .collabQuarter {
   box-sizing: border-box;
   background-color: white;
-  border: 0.15vw solid #ff008c;
   border-radius: 2vw;
   height: 26vw;
+  background-size: cover;
+  background-position: center;
 }
 .collabHalf {
   width: 44vw;
@@ -1159,6 +1249,13 @@ body {
   grid-column: 2;
   display: flex;
   gap: 1.6vw;
+}
+.footerSocials a {
+  display: block;
+  transition: transform 0.25s ease;
+}
+.footerSocials a:hover {
+  transform: scale(1.15);
 }
 .footerSocials a > span {
   width: 3.4vw;
@@ -1201,6 +1298,10 @@ body {
   font-size: 1.1vw;
   font-weight: 400;
   text-decoration: underline;
+  transition: color ease 0.25s;
+}
+.footerPolicy:hover {
+  color: white;
 }
 .notFound {
   width: 100vw;
@@ -1240,4 +1341,11 @@ body {
   padding: 1.2vw 3.2vw;
   border-radius: 4vw;
   text-decoration: none;
+  transition:
+    transform ease 0.25s,
+    box-shadow ease 0.25s;
+}
+.notFoundButton:hover {
+  transform: translateY(-0.2vw);
+  box-shadow: 0 0.6vw 1.6vw rgba(0, 0, 0, 0.3);
 }

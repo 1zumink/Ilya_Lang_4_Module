@@ -69,7 +69,7 @@
     right: 6.4vw;
     width: 8vw;
     height: 8vw;
-    background-image: url('https://img.icons8.com/ios/50/long-arrow-right--v2.png');
+    background-image: url('../images/longArrow.png');
     background-size: contain;
     opacity: 0;
     transition:
