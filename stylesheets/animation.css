@@ -1,4 +1,3 @@
-/* Покачивание стрелки вверх-вниз, зациклено */
 .arrowHero {
   animation: bobArrow 1.6s ease-in-out infinite;
 }
