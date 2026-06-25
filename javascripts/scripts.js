@@ -1,5 +1,3 @@
-//все скрипты для всех html-страниц
-
 burgerMenu()
 plansScroll()
 caseSlider()
@@ -13,7 +11,6 @@ function burgerMenu() {
   }
 }
 
-// На адаптиве: раскрываем карточку плана, когда она в середине экрана
 function plansScroll() {
   let cards = document.querySelectorAll('.planCard')
   if (!cards.length) {
@@ -41,7 +38,6 @@ function handlePlanCards(entries) {
   }
 }
 
-// Слайдеры кейсов (стрелки вперёд/назад, зацикленный, плюс свайп пальцем)
 function caseSlider() {
   let sliders = document.querySelectorAll('.slider')
   let i
@@ -111,7 +107,6 @@ function initSlider(slider) {
   })
 }
 
-// Поп-ап с соц. сетями (открывается по иконке на бенто, закрывается крестиком)
 function newsPopup() {
   let openBtn = document.querySelector('#newsToggle')
   let overlay = document.querySelector('#newsPopupOverlay')
