@@ -458,6 +458,35 @@
     width: 43vw;
     height: 53vw;
   }
+  .collabOrderBtn {
+    margin-top: 4vw;
+  }
+  .orderPopup {
+    width: 90vw;
+    padding: 5vw;
+    border-radius: 4vw;
+  }
+  .orderPopupTitle {
+    font-size: 5.4vw;
+  }
+  .orderPopupCollab {
+    font-size: 3.4vw;
+    margin: 1.5vw 0 5vw;
+  }
+  .orderForm {
+    gap: 3vw;
+  }
+  .orderInput {
+    border-radius: 2vw;
+    padding: 3vw;
+    font-size: 3.6vw;
+  }
+  .orderSubmit {
+    margin-top: 2vw;
+    border-radius: 2vw;
+    padding: 3.4vw;
+    font-size: 4vw;
+  }
   .footer {
     margin-top: 10vw;
     background-image: url('../images/footerMobileBg.svg');

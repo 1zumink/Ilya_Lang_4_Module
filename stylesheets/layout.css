@@ -1206,6 +1206,88 @@ body {
   gap: 2vw;
   margin-top: 2vw;
 }
+.collabOrderBtn {
+  margin-top: 2vw;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+.orderPopupOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity ease 0.3s,
+    visibility ease 0.3s;
+}
+.orderPopupOverlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.orderPopup {
+  position: relative;
+  box-sizing: border-box;
+  width: 40vw;
+  padding: 3vw;
+  border-radius: 2vw;
+  background-color: #ff008c;
+}
+.orderPopupTitle {
+  color: white;
+  font-size: 2.2vw;
+  font-weight: 400;
+  margin: 0;
+}
+.orderPopupCollab {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.4vw;
+  font-weight: 400;
+  margin: 0.6vw 0 2vw;
+}
+.orderForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4vw;
+}
+.orderInput {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-radius: 1vw;
+  padding: 1.2vw 1.4vw;
+  font-size: 1.4vw;
+  font-family: inherit;
+  background-color: white;
+  color: #1a1a1a;
+}
+.orderInput::placeholder {
+  color: #999;
+}
+.orderSubmit {
+  margin-top: 1vw;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 1vw;
+  padding: 1.2vw;
+  font-size: 1.6vw;
+  font-weight: 400;
+  color: #ff008c;
+  background-color: white;
+  transition:
+    transform ease 0.25s,
+    box-shadow ease 0.25s;
+}
+.orderSubmit:hover {
+  transform: translateY(-0.2vw);
+  box-shadow: 0 0.6vw 1.6vw rgba(0, 0, 0, 0.25);
+}
 .collabHalf,
 .collabQuarter {
   box-sizing: border-box;

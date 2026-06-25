@@ -2,6 +2,7 @@ burgerMenu()
 plansScroll()
 caseSlider()
 newsPopup()
+orderPopup()
 
 function burgerMenu() {
   let burger = document.querySelector('#burger')
@@ -127,5 +128,40 @@ function newsPopup() {
     if (event.target === overlay) {
       overlay.classList.remove('active')
     }
+  }
+}
+
+function orderPopup() {
+  let openBtns = document.querySelectorAll('.collabOrderBtn')
+  let overlay = document.querySelector('#orderPopupOverlay')
+  let closeBtn = document.querySelector('#orderPopupClose')
+  let collabLabel = document.querySelector('#orderPopupCollab')
+  let form = document.querySelector('#orderForm')
+  if (!openBtns.length || !overlay || !closeBtn || !form) {
+    return
+  }
+
+  let i
+  for (i = 0; i < openBtns.length; i++) {
+    openBtns[i].onclick = function () {
+      collabLabel.textContent = this.getAttribute('data-collab')
+      overlay.classList.add('active')
+    }
+  }
+
+  closeBtn.onclick = function () {
+    overlay.classList.remove('active')
+  }
+
+  overlay.onclick = function (event) {
+    if (event.target === overlay) {
+      overlay.classList.remove('active')
+    }
+  }
+
+  form.onsubmit = function (event) {
+    event.preventDefault()
+    form.reset()
+    overlay.classList.remove('active')
   }
 }

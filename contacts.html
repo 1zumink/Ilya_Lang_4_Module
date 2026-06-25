@@ -45,6 +45,12 @@
         <div class="collabQuarter asset-collabya2"></div>
         <div class="collabQuarter asset-collabya3"></div>
       </div>
+      <button
+        class="caseSeeButton collabOrderBtn"
+        data-collab="Спарк × Яндекс Музыка"
+      >
+        Заказать мерч
+      </button>
     </div>
     <div class="collabSection">
       <p class="collabTitle">Спарк × Дринкит</p>
@@ -57,6 +63,12 @@
         <div class="collabQuarter asset-collabdr2"></div>
         <div class="collabQuarter asset-collabdr3"></div>
       </div>
+      <button
+        class="caseSeeButton collabOrderBtn"
+        data-collab="Спарк × Дринкит"
+      >
+        Заказать мерч
+      </button>
     </div>
     <footer class="footer">
       <div class="footerContent">
@@ -93,5 +105,40 @@
         <a href="404.html" class="footerPolicy">Политика конфиденциальности</a>
       </div>
     </footer>
+
+    <div class="orderPopupOverlay" id="orderPopupOverlay">
+      <div class="orderPopup">
+        <button class="newsPopupClose" id="orderPopupClose" type="button">
+          <span></span>
+          <span></span>
+        </button>
+        <p class="orderPopupTitle">Заказать мерч</p>
+        <p class="orderPopupCollab" id="orderPopupCollab"></p>
+        <form class="orderForm" id="orderForm">
+          <input
+            class="orderInput"
+            type="text"
+            name="name"
+            placeholder="Имя"
+            required
+          />
+          <input
+            class="orderInput"
+            type="tel"
+            name="phone"
+            placeholder="Телефон"
+            required
+          />
+          <input
+            class="orderInput"
+            type="email"
+            name="email"
+            placeholder="Имейл"
+            required
+          />
+          <button class="orderSubmit" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
