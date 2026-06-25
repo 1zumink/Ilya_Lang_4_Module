@@ -18,6 +18,207 @@ body {
   justify-content: center;
   align-items: center;
 }
+[class*='asset-'] {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.asset-arrowhero {
+  background-image: url('../images/arrowHero.png');
+}
+.asset-contactsicon {
+  background-image: url('../images/ContactsIcon.svg');
+}
+.asset-icon1 {
+  background-image: url('../images/icon1.svg');
+}
+.asset-icon2 {
+  background-image: url('../images/icon2.svg');
+}
+.asset-icon3 {
+  background-image: url('../images/icon3.svg');
+}
+.asset-youtubeicon {
+  background-image: url('../images/youtubeIcon.svg');
+}
+.asset-insticon {
+  background-image: url('../images/instIcon.svg');
+}
+.asset-tiktokicon {
+  background-image: url('../images/TikTokIcon.svg');
+}
+.asset-tgicon {
+  background-image: url('../images/TgIcon.svg');
+}
+.asset-arrowpink {
+  background-image: url('../images/arrowPink.svg');
+}
+.asset-arrowstroke {
+  background-image: url('../images/arrowStroke.svg');
+}
+.asset-footerlogo {
+  background-image: url('../images/footerLogo.svg');
+}
+.asset-youtubefooter {
+  background-image: url('../images/YoutubeFooter.svg');
+}
+.asset-instfooter {
+  background-image: url('../images/InstFooter.svg');
+}
+.asset-tiktokfooter {
+  background-image: url('../images/TikTokFooter.svg');
+}
+.asset-tgfooter {
+  background-image: url('../images/TgFooter.svg');
+}
+.asset-ryabov1 {
+  background-image: url('../images/ryabov1.jpg');
+}
+.asset-ryabov2 {
+  background-image: url('../images/ryabov2.jpg');
+}
+.asset-ryabov3 {
+  background-image: url('../images/ryabov3.jpg');
+}
+.asset-ryabov4 {
+  background-image: url('../images/ryabov4.jpg');
+}
+.asset-ryabov5 {
+  background-image: url('../images/ryabov5.jpg');
+}
+.asset-izvestiya1 {
+  background-image: url('../images/izvestiya1.jpg');
+}
+.asset-izvestiya2 {
+  background-image: url('../images/izvestiya2.jpg');
+}
+.asset-izvestiya3 {
+  background-image: url('../images/izvestiya3.jpg');
+}
+.asset-izvestiya4 {
+  background-image: url('../images/izvestiya4.jpg');
+}
+.asset-izvestiya5 {
+  background-image: url('../images/izvestiya5.jpg');
+}
+.asset-lodge3-1 {
+  background-image: url('../images/lodge3_1.png');
+}
+.asset-lodge3-2 {
+  background-image: url('../images/lodge3_2.png');
+}
+.asset-lodge3-3 {
+  background-image: url('../images/lodge3_3.png');
+}
+.asset-lodge3-4 {
+  background-image: url('../images/lodge3_4.png');
+}
+.asset-lodge3-5 {
+  background-image: url('../images/lodge3_5.png');
+}
+.asset-kutuzov1 {
+  background-image: url('../images/kutuzov1.jpg');
+}
+.asset-kutuzov2 {
+  background-image: url('../images/kutuzov2.jpg');
+}
+.asset-kutuzov3 {
+  background-image: url('../images/kutuzov3.jpg');
+}
+.asset-kutuzov4 {
+  background-image: url('../images/kutuzov4.jpg');
+}
+.asset-kutuzov5 {
+  background-image: url('../images/kutuzov5.jpeg');
+}
+.asset-kutuzov6 {
+  background-image: url('../images/kutuzov6.jpg');
+}
+.asset-lodge10-1 {
+  background-image: url('../images/lodge10_1.png');
+}
+.asset-lodge10-2 {
+  background-image: url('../images/lodge10_2.png');
+}
+.asset-lodge10-3 {
+  background-image: url('../images/lodge10_3.png');
+}
+.asset-lodge10-4 {
+  background-image: url('../images/lodge10_4.png');
+}
+.asset-lodge10-5 {
+  background-image: url('../images/lodge10_5.png');
+}
+.asset-caseimage1 {
+  background-image: url('../images/caseImage1.jpg');
+}
+.asset-caseimage2 {
+  background-image: url('../images/caseImage2.jpg');
+}
+.asset-caseimage3 {
+  background-image: url('../images/caseImage3.jpg');
+}
+.asset-caseimage4 {
+  background-image: url('../images/caseImage4.jpg');
+}
+.asset-party1-1 {
+  background-image: url('../images/party1_1.jpg');
+}
+.asset-party1-2 {
+  background-image: url('../images/party1_2.jpg');
+}
+.asset-party1-3 {
+  background-image: url('../images/party1_3.jpg');
+}
+.asset-party1-4 {
+  background-image: url('../images/party1_4.jpg');
+}
+.asset-party2-1 {
+  background-image: url('../images/party2_1.png');
+}
+.asset-party2-2 {
+  background-image: url('../images/party2_2.png');
+}
+.asset-party2-3 {
+  background-image: url('../images/party2_3.png');
+}
+.asset-party3-1 {
+  background-image: url('../images/party3_1.jpg');
+}
+.asset-party3-2 {
+  background-image: url('../images/party3_2.jpg');
+}
+.asset-party3-3 {
+  background-image: url('../images/party3_3.jpg');
+}
+.asset-party3-4 {
+  background-image: url('../images/party3_4.jpg');
+}
+.asset-party4-1 {
+  background-image: url('../images/party4_1.jpg');
+}
+.asset-party4-2 {
+  background-image: url('../images/party4_2.jpg');
+}
+.asset-party4-3 {
+  background-image: url('../images/party4_3.jpg');
+}
+.asset-party4-4 {
+  background-image: url('../images/party4_4.jpg');
+}
+.asset-party5-1 {
+  background-image: url('../images/party5_1.jpg');
+}
+.asset-party5-2 {
+  background-image: url('../images/party5_2.jpg');
+}
+.asset-party5-3 {
+  background-image: url('../images/party5_3.jpg');
+}
+.asset-party5-4 {
+  background-image: url('../images/party5_4.jpg');
+}
 .header {
   display: flex;
   align-items: center;
@@ -141,6 +342,7 @@ body {
   left: 50%;
   margin-left: -1.5vw;
   width: 3vw;
+  aspect-ratio: 59 / 31;
 }
 .mainAbout {
   width: 90vw;
@@ -185,7 +387,7 @@ body {
   cursor: pointer;
   z-index: 1;
 }
-.bentoNewsBtn img {
+.bentoNewsBtn > span {
   display: block;
   width: 100%;
   height: 100%;
@@ -270,7 +472,7 @@ body {
   width: 4.5vw;
   height: 4.5vw;
 }
-.newsSocialArrow img {
+.newsSocialArrow span {
   display: block;
   width: 100%;
   height: 100%;
@@ -632,7 +834,7 @@ body {
     opacity: 0;
   }
 }
-.planIcon img {
+.planIcon span {
   display: block;
   width: 100%;
   height: 100%;
@@ -690,8 +892,9 @@ body {
   flex: 0 0 100%;
   width: 100%;
   height: 42vw;
-  object-fit: cover;
   display: block;
+  background-size: cover;
+  background-position: center;
 }
 .sliderArrow {
   position: absolute;
@@ -725,7 +928,8 @@ body {
   display: block;
   width: 100%;
   height: 32vw;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
 }
 .placeHero::after {
   content: '';
@@ -764,11 +968,51 @@ body {
 .placeImage {
   display: block;
   width: 100%;
+  aspect-ratio: 3 / 2;
   border-radius: 2vw;
   margin-top: 2vw;
+  background-size: cover;
+  background-position: center;
 }
 .placeImage:first-of-type {
   margin-top: 0;
+}
+.placeImage.asset-lodge3-2,
+.placeImage.asset-lodge3-3,
+.placeImage.asset-lodge3-4,
+.placeImage.asset-lodge3-5,
+.placeImage.asset-lodge10-2,
+.placeImage.asset-lodge10-3,
+.placeImage.asset-lodge10-4,
+.placeImage.asset-lodge10-5 {
+  aspect-ratio: 2 / 1;
+}
+.placeImage.asset-kutuzov5 {
+  aspect-ratio: 16 / 9;
+}
+.placeImage.asset-party1-2 {
+  aspect-ratio: 736 / 1075;
+}
+.placeImage.asset-party1-3 {
+  aspect-ratio: 1 / 1;
+}
+.placeImage.asset-party1-4 {
+  aspect-ratio: 4 / 3;
+}
+.placeImage.asset-party3-2,
+.placeImage.asset-party4-2,
+.placeImage.asset-party4-3,
+.placeImage.asset-party4-4,
+.placeImage.asset-party5-2 {
+  aspect-ratio: 3 / 4;
+}
+.placeImage.asset-party3-3 {
+  aspect-ratio: 736 / 1308;
+}
+.placeImage.asset-party3-4,
+.placeImage.asset-party5-3,
+.placeImage.asset-party5-4 {
+  aspect-ratio: 4 / 5;
 }
 .placeSidebar {
   width: 31vw;
@@ -908,7 +1152,7 @@ body {
   grid-row: 1 / 3;
   grid-column: 1;
   width: 18vw;
-  height: auto;
+  aspect-ratio: 384 / 496;
 }
 .footerSocials {
   grid-row: 1;
@@ -916,7 +1160,7 @@ body {
   display: flex;
   gap: 1.6vw;
 }
-.footerSocials img {
+.footerSocials a > span {
   width: 3.4vw;
   height: 3.4vw;
 }

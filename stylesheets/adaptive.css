@@ -478,7 +478,7 @@
     justify-content: center;
     gap: 5vw;
   }
-  .footerSocials img {
+  .footerSocials a > span {
     width: 9vw;
     height: 9vw;
   }
