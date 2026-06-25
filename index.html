@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Спарк»</title>
+    <title>Спарк</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <script defer src="javascripts/scripts.js"></script>
   </head>
@@ -31,6 +31,9 @@
         <p class="discountTitle">20<span class="percentFix">%</span> СКИДКА</p>
         <p class="discountSubtitle">на первое мероприятие</p>
       </div>
+      <button class="bentoNewsBtn" id="newsToggle">
+        <img src="images/ContactsIcon.svg" alt="Новости" />
+      </button>
       <div class="mainAbout3 blockHalf">
         <p class="cardTitle">Подходит любому масштабу</p>
         <p class="cardSubtitle">
@@ -54,6 +57,42 @@
       </div>
       <div class="mainAbout4 blockQuarter"></div>
       <div class="mainAbout5 blockQuarter"></div>
+    </div>
+
+    <div class="newsPopupOverlay" id="newsPopupOverlay">
+      <div class="newsPopup">
+        <button class="newsPopupClose" id="newsPopupClose">
+          <span></span>
+          <span></span>
+        </button>
+        <p class="newsPopupTitle">Будь вкурсе всех наших новостей!</p>
+        <div class="newsSocialRow">
+          <a href="" target="_blank" class="newsSocialCard blockQuarter">
+            <img class="newsSocialIcon" src="images/youtubeIcon.svg" alt="YouTube" />
+            <span class="newsSocialArrow">
+              <img src="images/arrowPink.svg" alt="" />
+            </span>
+          </a>
+          <a href="" target="_blank" class="newsSocialCard blockQuarter">
+            <img class="newsSocialIcon" src="images/instIcon.svg" alt="Instagram" />
+            <span class="newsSocialArrow">
+              <img src="images/arrowPink.svg" alt="" />
+            </span>
+          </a>
+          <a href="" target="_blank" class="newsSocialCard blockQuarter">
+            <img class="newsSocialIcon" src="images/TikTokIcon.svg" alt="TikTok" />
+            <span class="newsSocialArrow">
+              <img src="images/arrowPink.svg" alt="" />
+            </span>
+          </a>
+          <a href="" target="_blank" class="newsSocialCard blockQuarter">
+            <img class="newsSocialIcon" src="images/TgIcon.svg" alt="Telegram" />
+            <span class="newsSocialArrow">
+              <img src="images/arrowPink.svg" alt="" />
+            </span>
+          </a>
+        </div>
+      </div>
     </div>
     <div class="HorizontalScroll1">
       <p class="scrollTitle">
@@ -131,27 +170,69 @@
       <div class="caseGroup">
         <div class="caseRow">
           <div class="caseContent caseContentBlue">
-            <p class="caseTitle">Взрывная суббота в «Пипл»!</p>
+            <p class="caseTitle">Андеграунд-вечеринка в лофте</p>
             <ul class="caseList">
-              <li>1000 человек</li>
-              <li>10 диджейсетов</li>
-              <li>5 часов веселья</li>
+              <li>800 человек</li>
+              <li>Световая инсталляция-куб</li>
+              <li>6 часов нон-стоп</li>
             </ul>
           </div>
-          <div class="caseImage"></div>
+          <div
+            class="caseImage"
+            style="background-image: url('images/caseImage1.jpg')"
+          ></div>
         </div>
         <a href="" class="caseButton caseButtonBlue">Смотреть кейс</a>
       </div>
 
       <div class="caseGroup">
         <div class="caseRow">
-          <div class="caseImage"></div>
+          <div
+            class="caseImage"
+            style="background-image: url('images/caseImage2.jpg')"
+          ></div>
           <div class="caseContent caseContentPink">
-            <p class="caseTitle">Взрывная суббота в «Пипл»!</p>
+            <p class="caseTitle">Клубная ночь с live-сетом</p>
             <ul class="caseList">
-              <li>1000 человек</li>
-              <li>10 диджейсетов</li>
-              <li>5 часов веселья</li>
+              <li>600 человек</li>
+              <li>Диджей-сет</li>
+              <li>Лазерное шоу</li>
+            </ul>
+          </div>
+        </div>
+        <a href="" class="caseButton caseButtonPink">Смотреть кейс</a>
+      </div>
+
+      <div class="caseGroup">
+        <div class="caseRow">
+          <div class="caseContent caseContentBlue">
+            <p class="caseTitle">Экстрим-шоу Proton BMX</p>
+            <ul class="caseList">
+              <li>1000 зрителей</li>
+              <li>BMX-рампа и шоу-программа</li>
+              <li>Фотозона</li>
+            </ul>
+          </div>
+          <div
+            class="caseImage"
+            style="background-image: url('images/caseImage3.jpg')"
+          ></div>
+        </div>
+        <a href="" class="caseButton caseButtonBlue">Смотреть кейс</a>
+      </div>
+
+      <div class="caseGroup">
+        <div class="caseRow">
+          <div
+            class="caseImage"
+            style="background-image: url('images/caseImage4.jpg')"
+          ></div>
+          <div class="caseContent caseContentPink">
+            <p class="caseTitle">Корпоративный гала-вечер</p>
+            <ul class="caseList">
+              <li>300 гостей</li>
+              <li>Красная дорожка</li>
+              <li>Фуршет и шоу-программа</li>
             </ul>
           </div>
         </div>
@@ -206,5 +287,33 @@
         </a>
       </div>
     </div>
+    <footer class="footer">
+      <div class="footerContent">
+        <img class="footerLogo" src="images/footerLogo.svg" alt="Спарк" />
+        <div class="footerSocials">
+          <a href="#" target="_blank" rel="noopener"><img src="images/YoutubeFooter.svg" alt="YouTube" /></a>
+          <a href="#" target="_blank" rel="noopener"><img src="images/InstFooter.svg" alt="Instagram" /></a>
+          <a href="#" target="_blank" rel="noopener"><img src="images/TikTokFooter.svg" alt="TikTok" /></a>
+          <a href="#" target="_blank" rel="noopener"><img src="images/TgFooter.svg" alt="Telegram" /></a>
+        </div>
+        <div class="footerInfo">
+          <div class="footerInfoCol">
+            <p class="footerInfoLabel">Руководители:</p>
+            <p class="footerInfoText">Дарья Зародина</p>
+            <p class="footerInfoText">Анна Комкова</p>
+          </div>
+          <div class="footerInfoCol">
+            <p class="footerInfoLabel">@kkklounada</p>
+            <p class="footerInfoText">Илья Ланг</p>
+            <p class="footerInfoText">Б25ДЗ09</p>
+          </div>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p class="footerCopy">© 2026 СПАРК. Все права защищены.</p>
+        <a href="#" class="footerPolicy">Политика конфиденциальности</a>
+      </div>
+    </footer>
   </body>
 </html>
+

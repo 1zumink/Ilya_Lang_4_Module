@@ -299,6 +299,9 @@
     margin-top: 5vw;
   }
   .caseFull {
+    gap: 9vw;
+  }
+  .caseFullGroup {
     gap: 3vw;
   }
   .caseFullCard {
@@ -387,5 +390,139 @@
   .placeTimingList li {
     font-size: 3.6vw;
     gap: 2vw;
+  }
+  .bentoNewsBtn {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 50vw;
+    height: 50vw;
+    margin: 0 auto;
+  }
+  .newsPopup {
+    width: 90vw;
+    padding: 5vw;
+    border-radius: 4vw;
+  }
+  .newsPopupTitle {
+    font-size: 5.4vw;
+    margin-bottom: 5vw;
+  }
+  .newsPopupClose {
+    top: 3vw;
+    right: 3vw;
+    width: 9vw;
+    height: 9vw;
+  }
+  .newsPopupClose span {
+    height: 0.6vw;
+  }
+  .newsSocialRow {
+    flex-wrap: wrap;
+    gap: 2.5vw;
+  }
+  .newsSocialCard {
+    width: 38vw;
+    height: 46vw;
+  }
+  .newsSocialIcon {
+    width: 16vw;
+    height: 16vw;
+  }
+  .newsSocialArrow {
+    top: -1vw;
+    right: -1vw;
+    width: 10vw;
+    height: 10vw;
+  }
+  .collabSection {
+    margin-top: 8vw;
+  }
+  .collabTitle {
+    font-size: 6vw;
+  }
+  .collabDescription {
+    font-size: 3.6vw;
+    margin-top: 2vw;
+  }
+  .collabGrid {
+    gap: 4vw;
+    margin-top: 4vw;
+  }
+  .collabHalf {
+    width: 90vw;
+    height: 53vw;
+  }
+  .collabQuarter {
+    width: 43vw;
+    height: 53vw;
+  }
+  .footer {
+    margin-top: 10vw;
+    background-image: url('../images/footerMobileBg.svg');
+    padding: 8vw 6vw;
+  }
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    gap: 8vw;
+  }
+  .footerInfo {
+    order: 1;
+    flex-direction: column;
+    gap: 4vw;
+  }
+  .footerSocials {
+    order: 2;
+    justify-content: center;
+    gap: 5vw;
+  }
+  .footerSocials img {
+    width: 9vw;
+    height: 9vw;
+  }
+  .footerLogo {
+    order: 3;
+    width: 36vw;
+    margin: 0 auto;
+  }
+  .footerInfoLabel,
+  .footerInfoText {
+    font-size: 3.6vw;
+    text-align: center;
+  }
+  .footerInfoCol {
+    gap: 1.6vw;
+  }
+  .footerBottom {
+    flex-direction: column;
+    gap: 2vw;
+    text-align: center;
+    margin-top: 6vw;
+  }
+  .footerCopy,
+  .footerPolicy {
+    font-size: 3vw;
+  }
+  .notFound {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+    border-radius: 0;
+    background-image: url('../images/404BgMobile.svg');
+  }
+  .notFoundContent {
+    gap: 4vw;
+    padding: 0 6vw;
+  }
+  .notFoundText {
+    font-size: 5.4vw;
+  }
+  .notFoundButton {
+    margin-top: 2vw;
+    font-size: 4.6vw;
+    padding: 3vw 8vw;
+    border-radius: 8vw;
   }
 }

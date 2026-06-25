@@ -3,6 +3,7 @@
 burgerMenu()
 plansScroll()
 caseSlider()
+newsPopup()
 
 function burgerMenu() {
   let burger = document.querySelector('#burger')
@@ -40,13 +41,16 @@ function handlePlanCards(entries) {
   }
 }
 
-// Слайдер кейсов (стрелки вперёд/назад, зацикленный, плюс свайп пальцем)
+// Слайдеры кейсов (стрелки вперёд/назад, зацикленный, плюс свайп пальцем)
 function caseSlider() {
-  let slider = document.querySelector('.slider')
-  if (!slider) {
-    return
+  let sliders = document.querySelectorAll('.slider')
+  let i
+  for (i = 0; i < sliders.length; i++) {
+    initSlider(sliders[i])
   }
+}
 
+function initSlider(slider) {
   let viewport = slider.querySelector('.sliderViewport')
   let track = slider.querySelector('.sliderTrack')
   let slides = slider.querySelectorAll('.sliderSlide')
@@ -105,4 +109,28 @@ function caseSlider() {
 
     update()
   })
+}
+
+// Поп-ап с соц. сетями (открывается по иконке на бенто, закрывается крестиком)
+function newsPopup() {
+  let openBtn = document.querySelector('#newsToggle')
+  let overlay = document.querySelector('#newsPopupOverlay')
+  let closeBtn = document.querySelector('#newsPopupClose')
+  if (!openBtn || !overlay || !closeBtn) {
+    return
+  }
+
+  openBtn.onclick = function () {
+    overlay.classList.add('active')
+  }
+
+  closeBtn.onclick = function () {
+    overlay.classList.remove('active')
+  }
+
+  overlay.onclick = function (event) {
+    if (event.target === overlay) {
+      overlay.classList.remove('active')
+    }
+  }
 }
